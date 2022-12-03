@@ -18,3 +18,9 @@ networks:
     driver: bridge
 volumes:
   db:
+
+# docker exec -it postgres bash
+# psql -U username
+# \l for showing the list of databases
+# CREATE DATABASE customer
+

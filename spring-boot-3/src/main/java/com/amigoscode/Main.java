@@ -19,7 +19,8 @@ public class Main {
         SpringApplication.run(Main.class, args);
     }
     @RequestMapping(value = "/", method = RequestMethod.GET)
-    public String greet(){
-        return "Hello Geeks!";
+    public GreetResponse greet(){
+        return new GreetResponse("Hello Geeks!");
     }
+    record GreetResponse(String greet){}
 }

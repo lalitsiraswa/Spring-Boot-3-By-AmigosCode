@@ -23,4 +23,9 @@ volumes:
 # psql -U username
 # \l for showing the list of databases
 # CREATE DATABASE customer
+# \c customer for connecting to customer DataBase
+# \dt show the list of relations(only tables) that belongs to DataBase
+# \d It shows all relations (Including tables and sequence)
+
+
 

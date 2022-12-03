@@ -26,10 +26,10 @@ public class Main {
         return new GreetResponse(
                 "Hello Geeks!",
                 List.of("Java", "GoLang", "JavaScript"),
-                new Person("Lalit Siraswa")
+                new Person("Lalit Siraswa", 23, 10000000)
                 );
     }
-    record Person(String name){}
+    record Person(String name, int age, double savings){}
 
 //    The Below both the GreetResponse Classes are exact same.
     record GreetResponse(

@@ -39,4 +39,9 @@ public class Main {
         customer.setEmail(request.email());
         customerRepository.save(customer);
     }
+    @DeleteMapping("{customerId}")
+    public String deleteCustomer(@PathVariable("customerId") Integer id){
+        customerRepository.deleteById(id);
+        return "Customer is deleted successfully!";
+    }
 }
